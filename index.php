@@ -65,29 +65,25 @@
       <hr class="d-sm-none">
     </div>
     <div class="col-sm-8">
-      <h2>PHP form handler</h2>
-
-
+      <h2>PHP Form Handler</h2>
 
       <?php
 
-
-if(isset($_POST["FirstName"])){//show data
-  echo $_POST["FirstName"];
-  
-}else{//show form
-  echo '
-            <form method="post" action="">
-            <div class="mb-3 mt-3">
-            <label for="email">First Name:</label>
-            <input type="text" class="form-control" id="FirstName" placeholder="Enter First Name" name="FirstName">
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-            </form>
+        if(isset($_POST["FirstName"])){//show data
+        echo $_POST["FirstName"];
+        }else{//show form
+        echo '
+                <form method="post" action="">
+                    <div class="mb-3 mt-3">
+                        <label for="FirstName">First Name:</label>
+                        <input type="text" class="form-control" id="FirstName" placeholder="Enter first name" name="FirstName">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
             ';
-}
+        }
 
-?>  
+        ?>
     </div>
   </div>
 </div>
